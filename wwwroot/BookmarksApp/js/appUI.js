@@ -135,7 +135,6 @@ async function renderBookmarks(autoRefresh = false) {
         } else {
             restoreContentScrollPosition();
         }
-        // Attached click events on command icons
         $(".editCmd").on("click", function () {
             saveContentScrollPosition();
             renderEditBookmarkForm(parseInt($(this).attr("editBookmarkId")));
@@ -340,7 +339,7 @@ function makeFavicon(url, big = false) {
     ///////////////////////////////////////////////////////////////////////////
     if (url.slice(-1) != "/") url += "/";
     let faviconClass = big ? "big-favicon" : "favicon";
-    url = "http://www.google.com/s2/favicons?sz=64&domain=" + url;
+    url = "https://www.google.com/s2/favicons?sz=64&domain=" + url;
     return `<div class="${faviconClass}" style="background-image: url('${url}');"></div>`;
 }
 function renderBookmark(Bookmark) {

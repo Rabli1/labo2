@@ -170,6 +170,26 @@ form {
     text-align: left;
 }
 
+.favicon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('../bookmark_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.big-favicon {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    background-image: url('../bookmark_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 input {
     margin-bottom: 20px !important;
 }
